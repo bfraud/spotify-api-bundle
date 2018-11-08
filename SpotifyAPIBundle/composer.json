@@ -1,0 +1,19 @@
+{
+  "name": "bfraud/spotify-api-bundle",
+  "description": "A Symfony bundle that provides integration for the bfraud/spotify-web-api-php-sdk lib",
+  "authors": [
+    {
+      "name": "Benjamin Fraud",
+      "email": "benjamin.fraud@gmail.com"
+    }
+  ],
+  "require": {
+    "bfraud/spotify-web-api-php-sdk"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.7.7"
+  },
+  "autoload": {
+    "psr-0": { "Bench1ps\\": ["src/"] }
+  }
+}
