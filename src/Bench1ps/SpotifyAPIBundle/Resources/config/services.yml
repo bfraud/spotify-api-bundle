@@ -5,10 +5,16 @@ services:
     spotify.authorization:
         class: Bench1ps\Spotify\Authorization\Authorization
         arguments:
-            - { client_id: "%spotify.client_id%", client_secret: "%spotify.client_secret%", redirect_uri: "%spotify.client_redirect_uri%" }
+            - client_id: "%spotify.client_id%"
+              client_secret: "%spotify.client_secret%"
+              redirect_uri: "%spotify.client_redirect_uri%"
+              base_url: "https://accounts.spotify.com"
+              proxy: "%spotify.proxy%"
             - "@spotify.session_handler"
 
     spotify.api:
         class: Bench1ps\Spotify\API\API
         arguments:
+            - base_url: "https://api.spotify.com"
+              proxy: "%spotify.proxy%"
             - "@spotify.session_handler"
