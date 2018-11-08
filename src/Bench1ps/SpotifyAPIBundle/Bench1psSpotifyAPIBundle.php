@@ -1,6 +1,6 @@
 <?php
 
-namespace Blablacar\Bundle\InsuranceBundle;
+namespace Bench1ps\SpotifyAPIBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

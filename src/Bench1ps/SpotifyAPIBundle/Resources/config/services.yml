@@ -1,0 +1,14 @@
+services:
+    spotify.session_handler:
+        class: Bench1ps\Spotify\Session\SessionHandler
+
+    spotify.authorization:
+        class: Bench1ps\Spotify\Authorization\Authorization
+        arguments:
+            - { client_id: "%spotify.client_id%", client_secret: "%spotify.client_secret%" }
+            - "@spotify.session_handler"
+
+    spotify.api:
+        class: Bench1ps\Spotify\API\API
+        arguments:
+            - "@spotify.session_handler"
