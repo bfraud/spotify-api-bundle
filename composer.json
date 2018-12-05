@@ -8,7 +8,7 @@
     }
   ],
   "require": {
-    "bfraud/spotify-web-api-php-sdk": "dev-downgrade-guzzle-5"
+    "bfraud/spotify-web-api-php-sdk": "dev-master"
   },
   "require-dev": {
     "phpunit/phpunit": "^4.7.7"
