@@ -1,0 +1,20 @@
+services:
+    spotify.session_handler:
+        class: Spotify\Session\SessionHandler
+
+    spotify.authorization:
+        class: Spotify\Authorization\Authorization
+        arguments:
+            - client_id: "%spotify_client_id%"
+              client_secret: "%spotify_client_secret%"
+              redirect_uri: "%spotify_redirect_uri%"
+              base_url: "https://accounts.spotify.com"
+              proxy: "%spotify_proxy%"
+            - "@spotify.session_handler"
+
+    spotify.api:
+        class: Spotify\API\API
+        arguments:
+            - base_url: "https://api.spotify.com"
+              proxy: "%spotify_proxy%"
+            - "@spotify.session_handler"

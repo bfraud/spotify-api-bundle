@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bfraud/spotify-web-api-php-sdk.git",
-                "reference": "ac9bb817b45373eea0d4002d7a68673c06e79f1e"
+                "reference": "a84908957ca4e8df98bcbd7bbec11c3f7c899e77"
             },
             "require": {
                 "guzzlehttp/guzzle": "~5.0"
@@ -23,7 +23,7 @@
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "Bench1ps\\": [
+                    "Spotify\\": [
                         "src/",
                         "examples/"
                     ]
@@ -36,7 +36,7 @@
                 }
             ],
             "description": "A library to interact with Spotify API",
-            "time": "2018-11-09T15:34:04+00:00"
+            "time": "2018-12-05T14:49:03+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
