@@ -20,7 +20,7 @@
     }
   ],
   "autoload": {
-    "psr-0": { "SpotifyAPIBundle\\": ["src/"] }
+    "psr-4": { "SpotifyAPIBundle\\": ["src/"] }
   },
   "minimum-stability": "dev"
 }
